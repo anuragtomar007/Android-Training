@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ParentLayout"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Android Library Tutorials"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnDagger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="45dp"
+        android:onClick="onClick"
+        android:layout_marginTop="190dp"
+        android:text="Dagger" />
+
+    <Button
+        android:id="@+id/btnRetrofit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="190dp"
+        android:onClick="onClick"
+        android:layout_toRightOf="@+id/btnDagger"
+        android:text="Retrofit" />
+
+    <Button
+        android:id="@+id/btnOtto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="10dp"
+        android:onClick="onClick"
+        android:layout_marginTop="190dp"
+        android:layout_toRightOf="@+id/btnRetrofit"
+        android:text="Otto" />
+
+    <Button
+        android:id="@+id/btnImplicitIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDagger"
+        android:layout_marginLeft="45dp"
+        android:onClick="onClick"
+        android:layout_marginTop="10dp"
+        android:text="Implicit Intent" />
+
+    <Button
+        android:id="@+id/btnWebSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDagger"
+        android:layout_toRightOf="@+id/btnImplicitIntent"
+        android:layout_marginLeft="15dp"
+        android:onClick="onClick"
+        android:layout_marginTop="10dp"
+        android:text="RailsFactory" />
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnImplicitIntent"
+        android:layout_marginLeft="45dp"
+        android:onClick="onClick"
+        android:layout_marginTop="10dp"
+        android:text="Camera" />
+
+    <Button
+        android:id="@+id/btnWhatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnImplicitIntent"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/btnCamera"
+        android:onClick="onClick"
+        android:layout_marginTop="10dp"
+        android:text="Open Whatsapp" />
+
+    <Button
+        android:id="@+id/btnContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCamera"
+        android:layout_marginLeft="45dp"
+        android:onClick="onClick"
+        android:layout_marginTop="10dp"
+        android:text="Contacts" />
+
+    <Button
+        android:id="@+id/btnActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCamera"
+        android:layout_marginLeft="15dp"
+        android:onClick="onClick"
+        android:layout_toRightOf="@+id/btnContacts"
+        android:layout_marginTop="10dp"
+        android:text="Activity Lifecycle" />
+
+    <Button
+        android:id="@+id/btnCheckRetrofit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnContacts"
+        android:layout_marginLeft="45dp"
+        android:onClick="onClick"
+        android:layout_marginTop="10dp"
+        android:text="Check Retrofit" />
+
+    <TextView
+        android:id="@+id/sports"
+        android:layout_below="@+id/btnCheckRetrofit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Sports Person"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCheckRetrofit"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/sports"
+        android:layout_marginTop="10dp"
+        android:entries="@array/Sports"/>
+
+</RelativeLayout>
